@@ -58,7 +58,7 @@
 \setbeamertemplate{navigation symbols}{} 
 \logo{\includegraphics[width=.05\textwidth]{assets/logo-unipd}} 
 \institute{University of Padova} 
-\date{December, 11, 2023} 
+\date{December, 9, 2024} 
 \subject{Course Structure} 
 
 %-----------------------------------------------------------------------
@@ -805,7 +805,7 @@ HeroPanel::HeroPanel(Game::Hero& hero, QWidget* parent)
  \begin{itemize}
   \item \texttt{std::string Character::getContent()} member function
   \item \texttt{QWidget* Character::render()} member function
-  \item RTTI / dynamic cast
+  \item RTTI / dynamic cast / typeid
   \item \texttt{std::string Character::getType()} member function
  \end{itemize}
  May work for tiny projects, but \emph{likely to fail} in bigger ones.
@@ -911,7 +911,7 @@ QWidget* Monster::render(){
  Common \emph{wrong} or \emph{non optimal} approaches:
  
  \begin{center}
-  RTTI / dynamic cast
+  RTTI / dynamic cast / typeid
  \end{center}
  
  \begin{lstlisting}[language=C++]
@@ -932,7 +932,7 @@ Info::Info(Character& character, QWidget* parent) {
  Common \emph{wrong} or \emph{non optimal} approaches:
  
  \begin{center}
-  RTTI / dynamic cast
+  RTTI / dynamic cast / typeid
  \end{center}
  
  Problems:
@@ -962,7 +962,7 @@ Info::Info(Character& character, QWidget* parent) {
 }
 \end{lstlisting}
  
- A \emph{worse version of RTTI}.
+ A strictly \emph{worse version of RTTI}.
 \end{frame}
 
 \begin{frame}{Polymorphism / Visitor}
