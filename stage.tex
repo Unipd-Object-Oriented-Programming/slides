@@ -1,0 +1,81 @@
+\documentclass[11pt]{beamer}
+\usetheme{CambridgeUS}
+
+%-----------------------------------------------------------------------
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{csquotes}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{forest}
+
+%-----------------------------------------------------------------------
+% Package customization
+\definecolor{links}{HTML}{FC0D30}
+\hypersetup{colorlinks,linkcolor=,urlcolor=links}
+
+\definecolor{coderegular}{rgb}{0.16, 0.16, 0.16}
+\definecolor{codecomment}{rgb}{0.50, 0.35, 0.02}
+\definecolor{codekeyword}{rgb}{0.5, 0.03, 0.09}
+\definecolor{codestring}{rgb}{0.94, 0.34, 0.0}
+\definecolor{codebackground}{rgb}{0.95,0.95,0.92}
+\definecolor{codenumbers}{rgb}{0.5,0.5,0.5}
+
+\lstdefinestyle{mystyle}{
+	backgroundcolor=\color{codebackground},
+	commentstyle=\color{codecomment},
+	keywordstyle=\color{codekeyword},
+	numberstyle=\tiny\color{codenumbers},
+	stringstyle=\color{codestring},
+	basicstyle=\ttfamily\footnotesize,
+	breakatwhitespace=false,
+	breaklines=true,
+	captionpos=b,
+	keepspaces=true,
+	numbers=left,
+	numbersep=2pt,
+	showspaces=false,
+	showstringspaces=false,
+	showtabs=false,
+	tabsize=2
+}
+
+\lstset{style=mystyle}
+
+%-----------------------------------------------------------------------
+% Commands
+\renewcommand{\emph}[1]{\textbf{#1}}
+
+%-----------------------------------------------------------------------
+% Headings
+\author{Marco Zanella}
+\title{Stage}
+\setbeamercovered{transparent} 
+\setbeamertemplate{navigation symbols}{} 
+\logo{\includegraphics[width=.05\textwidth]{assets/logo-unipd}} 
+\institute{University of Padova} 
+\date{December, 17, 2024} 
+\subject{Course Structure} 
+
+%-----------------------------------------------------------------------
+% Document
+\begin{document}
+	\begin{frame}{Stage}
+		Interested in any of the following?
+		\begin{itemize}
+			\item data science and \emph{machine learning}
+			\item search engine and \emph{NLP}
+			\item \emph{front-end} web development
+			\item \emph{back-end} web development
+			\item \emph{system integration}
+			\item \emph{e-commerce}
+		\end{itemize}
+		drop me an email at \href{mailto:marco.zanella@unipd.it}{marco.zanella@unipd.it}.
+		
+		I can get you in touch with companies looking for trainees!
+	\end{frame}
+\end{document}
